@@ -3,7 +3,7 @@ import { siteConfig } from './lib/site-config'
 export default siteConfig({
   // the site's root Notion page (required)
   //https://lamatic.notion.site/Marketplace-b2665789592e445996b5ad8e88336087?pvs=4
-  rootNotionPageId: 'c0e528eac6ae4245abe893878e97f28c',
+  rootNotionPageId: '4689d5d26fce4ca89dd4f9c938fb58c6',
   // if you want to restrict pages to a single notion workspace (optional)
   // (this should be a Notion ID; see the docs for how to extract this)
   rootNotionSpaceId: null,
@@ -51,17 +51,21 @@ export default siteConfig({
   //navigationStyle: 'default'
    navigationStyle: 'custom',
    navigationLinks: [
+     {
+       title: 'Features',
+       url: 'https://lamatic.ai/features/'
+     },
     {
-       title: '🛠 Work',
-       pageId: 'b4a0d2616e1c47468203aea9638a702c'
+       title: 'Docs',
+       url: 'https://lamatic.ai/docs/'
      },
 {
-       title: '🧭 Menu',
-       pageId: 'a04f53e1ed404e60b44d60c3a52d8f2e'
+       title: 'Company',
+       url: 'https://lamatic.ai/company/'
      },
 {
-       title: '🗓️ Cal',
-       pageId: 'a13f0d8b3898412a947a24c08d7f5139'
+       title: 'Pricing',
+       url: 'https://lamatic.ai/pricing'
      }]
 
 })
