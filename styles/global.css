@@ -9,6 +9,39 @@
 .notion-title {
   text-align: left;
 }
+@media (min-width: 768px) {
+  .notion-page {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    gap: 50px;
+  }
+
+  .notion-collection-page-properties {
+    grid-column: 1;
+    width: 100%;
+
+  }
+}
+
+
+.notion-page__properties .notion-property{
+  padding: 6px 0px 7px !important;
+  justify-content: flex-start;
+}
+
+.notion-page-content {
+  grid-column: 2;
+}
+
+.notion-page__property{
+  display: flex!important;
+  flex-direction: column;
+}
+.notion-page__property-name{
+  display: block;
+  flex: none;
+  width: 100%;
+}
 
 .notion-page-icon-hero
 {
