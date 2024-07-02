@@ -6,32 +6,20 @@
   --bg-color: black;
 }
 
+
+
 .notion-title {
   text-align: left;
 }
-@media (min-width: 768px) {
-  .notion-page {
-    display: grid;
-    grid-template-columns: 1fr 5fr;
-    gap: 50px;
-  }
 
-  .notion-collection-page-properties {
-    grid-column: 1;
-    width: 100%;
-
-  }
+.notion-collection-column-title-icon {
+  display: none;
 }
 
 
-.notion-page__properties .notion-property{
-  padding: 6px 0px 7px !important;
-  justify-content: flex-start;
-}
 
-.notion-page-content {
-  grid-column: 2;
-}
+
+
 
 .notion-page__property{
   display: flex!important;
@@ -85,4 +73,67 @@ body {
 .searchInput {
   color: var(--fg-color);
   caret-color: var(--fg-color);
+}
+
+
+/*CSS for App page*/
+@media (min-width: 1300px) {
+  .notion-page {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    gap: 50px;
+  }
+
+  .notion-collection-page-properties {
+    grid-column: 1;
+    width: 100%;
+
+  }
+  .notion-page-content {
+    grid-column: 2;
+  }
+
+
+  .notion-collection-row-property {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .notion-collection-row-value {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    min-height: 23px;
+    width: 100%;
+  }
+}
+
+.notion-collection-row-body > *:first-child > .notion-collection-column-title {
+  display: none;
+}
+
+.notion-collection-row-body > *:first-child > .notion-collection-row-value {
+
+  grid-column-gap: .5rem;
+  border: 1px solid #f33736;
+  background-color: #f33736;
+  color: white;
+  text-align: center;
+  white-space: nowrap;
+  border-radius: 5px;
+  justify-content: center;
+  align-items: center;
+  padding: .625rem 1.125rem;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.5;
+  text-decoration: none;
+  transition: all .3s;
+  display: flex;
+  box-shadow: 0 1px 2px rgba(16, 24, 40, .05);
+}
+
+.notion-collection-row-property .notion-collection-column-title{
+  padding: 0px;
 }
