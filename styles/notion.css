@@ -37,7 +37,7 @@ width: 100%;
   padding-left: 0;
   padding-right: 0;
   line-height: 1.65;
-  left: -10vw;
+
 }
 
 .index-page,
@@ -90,9 +90,6 @@ width: 100%;
   gap: 6vmin;
 }
 
-.notion-gallery-grid .notion-page-icon-inline {
-  display: none;
-}
 
 .notion-gallery-grid .notion-page-title-text {
   font-size: 2em;
