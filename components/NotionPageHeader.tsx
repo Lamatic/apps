@@ -82,7 +82,7 @@ export const NotionPageHeader: React.FC<{
 
           {/*{isSearchEnabled && <Search block={block} title={null} />}*/}
 
-          {isSearchEnabled && <Search block={block} title="Search Integrations" />}
+          {isSearchEnabled && <Search block={block} title="Search integration" />}
           <div data-tf-live="01HZ3801YE7Q8KB9T9548PYVC8"></div>
           <script src="//embed.typeform.com/next/embed.js"></script>
         </div>
