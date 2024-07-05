@@ -9,17 +9,17 @@ export default siteConfig({
   rootNotionSpaceId: null,
 
   // basic site info (required)
-  name: 'Aman Sharma',
+  name: 'Lamatic.ai Integration',
   domain: process.env.NEXT_PUBLIC_DOMAIN || 'lamatic.ai/integration',
-  author: 'Aman Sharma',
+  author: 'Lamatic.ai',
   // open graph metadata (optional)
-  description: '🚀 SaaS builder, Tech speaker and Entrepreneur',
+  description: 'GenAI API in Minutes with all the integrations you need',
 
   // social usernames (optional)
-  twitter: 'amanintech',
-  github: 'amanintech',
-  linkedin: 'amanintech',
-  newsletter: 'https://buildandscale.amanin.tech/', // optional newsletter URL
+  twitter: 'lamatic_ai',
+  github: 'lamatic',
+  linkedin: 'lamatic',
+  newsletter: 'https://labs.lamatic.ai/', // optional newsletter URL
   // youtube: '#', // optional youtube channel name or `channel/UCGbXXXXXXXXXXXXXXXXXXXXXX`
 
   // default notion icon and cover images for site-wide consistency (optional)
