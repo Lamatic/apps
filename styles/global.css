@@ -52,6 +52,32 @@ body {
   border-top: none;
 }
 
+.notion-aside-table-of-contents-header{
+  display: none;
+}
+
+.notion-collection-card{
+  border: 1px solid #e0d7c6;
+}
+
+.notion-page-cover-wrapper span, .notion-page-cover-wrapper img {
+  width: 100% !important;
+  height: 30vh !important;
+  min-height: 30vh !important;
+  max-height: 30vh !important;
+}
+
+.notion-page-cover-wrapper {
+  width: 100%;
+  height: 30vh;
+  min-height: 30vh;
+  max-height: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1368px !important;
+}
+
 
 @media (min-width: 1300px) {
   .notion-full-width {
@@ -67,9 +93,27 @@ body {
     max-width: 1200px !important;
   }
 
+  .notion-title{
+    grid-row: 1;
+    grid-column: 1;
+  }
+
   .notion-page > .notion-page-icon-hero{
     position: absolute;
     left: 7%;
+  }
+  .notion-collection-row-property .notion-property {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+  }
+  .notion-collection-row-body {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+  }
+  .notion-collection-column-title {
+    margin-top:10px;
   }
 
   .notion-full-width > .notion-page-icon-hero{
@@ -84,17 +128,24 @@ body {
     display: grid;
     max-width: 1200px !important;
     grid-template-columns: 1fr 5fr;
-    gap: 50px;
+    column-gap: 50px;
     width: 100%;
   }
 
   .notion-collection-page-properties {
     grid-column: 1;
+    grid-row: 2;
     width: 100%;
 
   }
   .notion-page-content {
     grid-column: 2;
+    grid-row: 2;
+  }
+
+  .notion-page-content-inner{
+    padding-left:50px ;
+    padding-right:50px ;
   }
 
 
@@ -102,6 +153,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
   }
 
   .notion-collection-row-value {
@@ -111,6 +163,13 @@ body {
     min-height: 23px;
     width: 100%;
   }
+}
+
+.notion-collection-row-body > *:first-child {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 
@@ -123,7 +182,7 @@ body {
   border: 1px solid #f33736;
   background-color: #f33736;
   color: white;
-  margin: 10px 0px;
+  margin: Auto;
   text-align: center;
   white-space: nowrap;
   border-radius: 5px;
@@ -133,10 +192,12 @@ body {
   font-size: 1rem;
   font-weight: 600;
   line-height: 1.5;
+  text-align:center;
   text-decoration: none;
   width: fit-content;
   max-width: 200px;
   transition: all .3s;
+  margin-bottom: 20px;
   display: flex;
   box-shadow: 0 1px 2px rgba(16, 24, 40, .05);
 }

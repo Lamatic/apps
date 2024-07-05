@@ -163,7 +163,7 @@
 
 .notion-title {
   display: block;
-  text-align: left; /*change for app*/
+  text-align: center; /*change for app*/
 }
 
 .notion-collection-row {
@@ -172,7 +172,7 @@
 
 
 .notion-collection-page-properties .notion-collection-column-title {
-  display: block;  /*change for app*/
+  display: flex;  /*change for app*/
 }
 
 .notion-collection-row-property .notion-property {
@@ -190,7 +190,7 @@
 .notion-page-cover-wrapper,
 .notion-page-cover-wrapper span,
 .notion-page-cover-wrapper img {
-  max-width: 1200px !important;
+  /*max-width: 1200px !important;*/
   border-radius: 24px;
 }
 
