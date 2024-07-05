@@ -83,6 +83,7 @@ export const NotionPageHeader: React.FC<{
 
           {/*{isSearchEnabled && <Search block={block} title={null} />}*/}
 
+          {isSearchEnabled && <Search block={block} title="Search Integrations" />}
         </div>
       </div>
     </header>
