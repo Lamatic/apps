@@ -2,7 +2,7 @@ import { siteConfig } from './lib/site-config'
 
 export default siteConfig({
   // the site's root Notion page (required)
-  //https://lamatic.notion.site/Marketplace-b2665789592e445996b5ad8e88336087?pvs=4
+  //https://lamatic.notion.site/Lamatic-ai-Integrations-4689d5d26fce4ca89dd4f9c938fb58c6?pvs=4
   rootNotionPageId: '4689d5d26fce4ca89dd4f9c938fb58c6',
   // if you want to restrict pages to a single notion workspace (optional)
   // (this should be a Notion ID; see the docs for how to extract this)
