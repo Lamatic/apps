@@ -4,6 +4,7 @@ const withBundleAnalyzer = require('@next/bundle-analyzer')({
 })
 
 module.exports = withBundleAnalyzer({
+  distDir: 'integration/.next',
   staticPageGenerationTimeout: 300,
   images: {
     domains: [
