@@ -1,10 +1,10 @@
 import * as React from 'react'
-//
-// import { NotionPage } from '@/components/NotionPage'
-// import { domain } from '@/lib/config'
-// import { resolveNotionPage } from '@/lib/resolve-notion-page'
 
-/*export const getStaticProps = async () => {
+import { NotionPage } from '@/components/NotionPage'
+import { domain } from '@/lib/config'
+import { resolveNotionPage } from '@/lib/resolve-notion-page'
+
+export const getStaticProps = async () => {
   try {
     const props = await resolveNotionPage(domain)
 
@@ -16,8 +16,8 @@ import * as React from 'react'
     // let next.js know explicitly that incremental SSG failed
     throw err
   }
-}*/
+}
 
-export default function NotionDomainPage() {
-  return <h1>Nothing Here</h1>
+export default function NotionDomainPage(props) {
+  return <NotionPage {...props} />
 }
