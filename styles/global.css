@@ -202,6 +202,10 @@ body {
   box-shadow: 0 1px 2px rgba(16, 24, 40, .05);
 }
 
+.notion-search-button{
+  background-color: #F2F2F2!important;
+}
+
 .notion-collection-row-property .notion-collection-column-title{
   padding: 0px;
 }

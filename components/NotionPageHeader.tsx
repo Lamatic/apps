@@ -77,13 +77,14 @@ export const NotionPageHeader: React.FC<{
               }
             })
             .filter(Boolean)}
-          <div data-tf-live="01HZ3801YE7Q8KB9T9548PYVC8"></div>
-          <script src="//embed.typeform.com/next/embed.js"></script>
+
           {/*<ToggleThemeButton />*/}
 
           {/*{isSearchEnabled && <Search block={block} title={null} />}*/}
 
           {isSearchEnabled && <Search block={block} title="Search Integrations" />}
+          <div data-tf-live="01HZ3801YE7Q8KB9T9548PYVC8"></div>
+          <script src="//embed.typeform.com/next/embed.js"></script>
         </div>
       </div>
     </header>
