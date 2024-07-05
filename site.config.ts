@@ -10,7 +10,7 @@ export default siteConfig({
 
   // basic site info (required)
   name: 'Aman Sharma',
-  domain: process.env.NEXT_PUBLIC_DOMAIN || 'amanin.tech',
+  domain: process.env.NEXT_PUBLIC_DOMAIN || 'lamatic.ai/integration',
   author: 'Aman Sharma',
   // open graph metadata (optional)
   description: '🚀 SaaS builder, Tech speaker and Entrepreneur',
